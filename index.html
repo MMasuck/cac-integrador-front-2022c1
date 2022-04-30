@@ -12,12 +12,14 @@
 
 <body>
     <header>
-        <div class="container-sm">
+        <div class="container-fluid">
             <div class="row">
-                <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-                    <img src="img/codoacodo.png" alt="Logo Codo a codo" width="115">
-                    <a class="navbar-brand" href="#">Conf Bs As</a>
-                    <ul class="navbar-nav">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="col-sm-5">
+                        <img src="img/codoacodo.png" alt="Logo Codo a codo" width="115">
+                        <a class="navbar-brand" href="#">Conf Bs As</a>
+                    </div>
+                    <ul class="navbar-nav col-sm-7">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">La conferencia</a>
                         </li>
@@ -39,9 +41,9 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <section class="Inicio">
+    <section class="Inicio">
+        <div class="container-fluid">
+            <div class="row">
                 <img class="img-fluid" src="img/ba1.jpg" alt="Palacio de las Aguas, Buenos Aires">
                 <div class="Texto inicio">
                     <h1>Conf Bs As</h1>
@@ -55,135 +57,129 @@
                     <button type="button" class="btn btn-outline-light text-dark">Quiero ser orador</button>
                     <button type="button" class="btn btn-success">Comprar tickets</button>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <div class="row">
-            <div class="Oradores" >
-                <p>CONOCE A LOS</p>
-                <H2>ORADORES</H2>
-                <div class="row">
-                    <div class="card col-sm-4">
-                        <img class="card-img-top" src="img/steve.jpg" alt="Steve Jobs">
-                        <div class="skills">
-                            <span class="badge bg-warning">JavaScript</span>
-                            <span class="badge bg-info">React</span>
-                        </div>
-                        <h4 class="card-title">Steve Jobs</h4>
-                        <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                            incidunt
-                            corrupti? Cum optio quo blanditiis, maxime, modi non pariatur repellat animi accusamus
-                            aspernatur
-                            voluptatibus incidunt magnam ipsum architecto quibusdam neque.</div>
+    <div id="oradores" class="container">
+            <p class="text-center">CONOCE A LOS</p>
+            <H2 class="text-center">ORADORES</H2>
+            <div class="row d-flex justify-content-center">
+                <div class="card col-sm-4">
+                    <img class="card-img-top" src="img/steve.jpg" alt="Steve Jobs">
+                    <div id="skills">
+                        <span class="badge bg-warning">JavaScript</span>
+                        <span class="badge bg-info">React</span>
                     </div>
-                    <div class="card col-sm-4">
-                        <img class="card-img-top" src="img/bill.jpg" alt="Bill Gates">
-                        <div class="skills">
-                            <span class="badge bg-warning">JavaScript</span>
-                            <span class="badge bg-info">React</span>
-                        </div>
-                        <h4 class="card-title">Bill Gates</h4>
-                        <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro
-                            accusantium hic in voluptas, repellendus ut vero quisquam culpa libero incidunt. Aliquam,
-                            vitae!
-                            Ducimus neque nobis nostrum alias perspiciatis. Nihil.</div>
+                    <h4 class="card-title">Steve Jobs</h4>
+                    <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+                        incidunt
+                        corrupti? Cum optio quo blanditiis, maxime, modi non pariatur repellat animi accusamus
+                        aspernatur
+                        voluptatibus incidunt magnam ipsum architecto quibusdam neque.</div>
+                </div>
+                <div class="card col-sm-4">
+                    <img class="card-img-top" src="img/bill.jpg" alt="Bill Gates">
+                    <div id="skills">
+                        <span class="badge bg-warning">JavaScript</span>
+                        <span class="badge bg-info">React</span>
                     </div>
-                    <div class="card col-sm-4">
-                        <img class="card-img-top" src="img/ada.jpeg" alt="Ada Lovelace">
-                        <div class="skills">
-                            <span class="badge bg-secondary">Negocios</span>
-                            <span class="badge bg-danger">Startups</span>
-                        </div>
-                        <h4 class="card-title">Ada Lovelace</h4>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor
-                            natus
-                            ipsam excepturi sequi quae, molestias beatae voluptate vero, distinctio recusandae
-                            accusantium sunt,
-                            odit veritatis facilis. Unde culpa possimus consectetur?</div>
+                    <h4 class="card-title">Bill Gates</h4>
+                    <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro
+                        accusantium hic in voluptas, repellendus ut vero quisquam culpa libero incidunt. Aliquam,
+                        vitae!
+                        Ducimus neque nobis nostrum alias perspiciatis. Nihil.</div>
+                </div>
+                <div class="card col-sm-4">
+                    <img class="card-img-top" src="img/ada.jpeg" alt="Ada Lovelace">
+                    <div id="skills">
+                        <span class="badge bg-secondary">Negocios</span>
+                        <span class="badge bg-danger">Startups</span>
                     </div>
+                    <h4 class="card-title">Ada Lovelace</h4>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor
+                        natus
+                        ipsam excepturi sequi quae, molestias beatae voluptate vero, distinctio recusandae
+                        accusantium sunt,
+                        odit veritatis facilis. Unde culpa possimus consectetur?</div>
+                </div>
+
+    <section id="honolulu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="img/honolulu.jpg" alt="Honolulu">
+                </div>
+                <div class="card col-sm-6 bg-secondary text-light">
+                    <h4 class="card-title">Bs As Octubre</h4>
+                    <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de
+                        Argentina, en los Estados Unidos. Honolulu es la mas sureña entre las principales ciudades
+                        estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste
+                        de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado
+                        consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                    <button type="button" class="btn btn-outline-light">Conocé más</button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="img-fluid" src="img/honolulu.jpg" alt="Honolulu">
-            </div>
-            <div class="card col-sm-6 bg-secondary text-light">
-                <h4 class="card-title">Bs As Octubre</h4>
-                <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de
-                    Argentina, en los Estados Unidos. Honolulu es la mas sureña entre las principales ciudades
-                    estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste
-                    de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado
-                    consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
-                <button type="button" class="btn btn-outline-light">Conocé más</button>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <section class="speakers-form">
+    <section class="speakers-form">
+        <div class="container">
+            <div class="row justify-content-center">
                 <p class="speakers-title1">CONVIÉRTETE EN UN</p>
                 <h2 class="speakers-title2">ORADOR</h2>
                 <h3>Anótate como orador para dar una <a id="charla-link" href=""> charla ignite.</a> Cuéntanos de que
                     quieres
                     hablar!</h3>
-            </section>
-            <div class="formulario">
-                <div class="row g-3">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                <div class="formulario">
+                    <div class="row g-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea placeholder="Sobre qué quieres hablar?" class="form-control"
+                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <p>Recuerda incluir un título para tu charla</p>
+                        <button class="btn btn-success" type="submit">Enviar</button>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea placeholder="Sobre qué quieres hablar?" class="form-control"
-                        id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <p>Recuerda incluir un título para tu charla</p>
-                    <button class="btn btn-success" type="submit">Enviar</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="container-fluid>
-        <div class="row">
-            <footer class="footer">
-                <nav class="navbar justify-content-center navbar-expand-sm bg-secondary navbar-dark">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Preguntas <br> frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Prensa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conferencias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Terminos y <br>condiciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Estudiantes</a>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
-        </div>
+        <footer class="footer">
+            <nav class="navbar justify-content-center navbar-expand-sm bg-secondary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas <br> frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prensa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conferencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terminos y <br>condiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estudiantes</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </div>
 </body>
-
 </html>
