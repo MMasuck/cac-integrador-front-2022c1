@@ -12,33 +12,38 @@
 
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                    <div class="col-sm-5">
-                        <img src="img/codoacodo.png" alt="Logo Codo a codo" width="115">
-                        <a class="navbar-brand" href="#">Conf Bs As</a>
-                    </div>
-                    <ul class="navbar-nav col-sm-7">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <div class="col-sm-5">
+                    <img src="img/codoacodo.png" alt="Logo Codo a codo" width="115">
+                    <a class="navbar-brand" href="#">Conf Bs As</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Los oradores</a>
+                            <a class="nav-link" href="#speakers">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                            <a class="nav-link" href="#where">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conviertete en orador</a>
+                            <a class="nav-link" href="#speakers-form">Conviertete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-success" href="#">Comprar tickets</a>
+                            <a class="nav-link text-success" href="#buy-tickets">Comprar tickets</a>
                         </li>
                     </ul>
-                </nav>
-            </div>
+                </div>
         </div>
+        </nav>
+
     </header>
 
     <section class="Inicio">
@@ -55,13 +60,13 @@
                         ¡Te
                         esperamos!</p>
                     <button type="button" class="btn btn-outline-light text-dark">Quiero ser orador</button>
-                    <button type="button" class="btn btn-success">Comprar tickets</button>
+                    <button type="button" class="btn btn-success" id="buy-tickets">Comprar tickets</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="oradores" class="container">
+    <div id="speakers" class="container">
         <p class="text-center">CONOCE A LOS</p>
         <H2 class="text-center">ORADORES</H2>
         <div class="row d-flex justify-content-center">
@@ -106,7 +111,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="where">
         <div class="row">
             <div class="col-sm-6">
                 <img class="img-fluid" src="img/honolulu.jpg" alt="Honolulu">
@@ -146,7 +151,7 @@
                     <p class="text-muted">Recuerda incluir un título para tu charla</p>
                     <div class="row justify-self-center">
                         <div class="d-grid col-sm">
-                        <button class="btn btn-success" type="submit">Enviar</button>
+                            <button class="btn btn-success" type="submit">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -154,7 +159,7 @@
         </div>
 
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <nav class="navbar justify-content-center navbar-expand-sm bg-secondary navbar-dark">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -181,6 +186,7 @@
                     </ul>
                 </nav>
             </div>
-            </footer>
+        </footer>
 </body>
+
 </html>
