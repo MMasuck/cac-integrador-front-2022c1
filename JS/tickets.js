@@ -29,3 +29,7 @@ function resume() {
             'Total a Pagar: $' + total;
     }
 }
+
+function clean() {
+    document.getElementById("buyTickets").reset();
+}
