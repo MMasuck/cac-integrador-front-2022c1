@@ -14,22 +14,23 @@ function resume() {
     if (category == 'Estudiante') {
         total = studentTicket * nOfTickets;
         document.getElementById('showTotal').innerHTML =
-            'Total a Pagar: $' + total;
+            'Total a pagar: $' + total;
     } else if (category == 'Trainee') {
         total = traineeTicket * nOfTickets;
         document.getElementById('showTotal').innerHTML =
-            'Total a Pagar: $' + total;
+            'Total a pagar: $' + total;
     } else if (category == 'Junior') {
         total = jrTicket * nOfTickets;
         document.getElementById('showTotal').innerHTML =
-            'Total a Pagar: $' + total;
+            'Total a pagar: $' + total;
     } else if (category == 'General') {
         total = ticket * nOfTickets;
         document.getElementById('showTotal').innerHTML =
-            'Total a Pagar: $' + total;
+            'Total a pagar: $' + total;
     }
 }
 
 function clean() {
     document.getElementById("buyTickets").reset();
+    document.getElementById("showTotal").innerHTML = "Total a pagar: $";
 }
